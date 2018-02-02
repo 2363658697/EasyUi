@@ -43,7 +43,7 @@ body {
 
 		var fname = $("#tb").textbox("getValue");
 
-		$("#dg").datagrid("reload", {
+		$("#dg").datagrid("load", {
 			foodName : fname
 		});
 	};
@@ -58,7 +58,7 @@ body {
 				if (msg.code == 0) {
 					$.messager.alert("提示","修改成功");
 					$("#w").window("close");
-					submitQuery();    
+					$("#dg").datagrid("reload");     
 				}else{
 					var message=msg.message;
 					$.messager.alert("提示",message); 							
@@ -147,7 +147,7 @@ body {
 						success : function(msg) {
 							if (msg.code == 0) {
 								$.messager.alert("提示","删除成功");
-								submitQuery();    
+								$("#dg").datagrid("reload");     
 							}else{
 								var message=msg.message;
 								$.messager.alert("提示",message); 							
