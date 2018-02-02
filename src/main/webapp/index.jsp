@@ -21,6 +21,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body>
-    测试拉取代码 <br>
+    test get <br>
   </body>
 </html>
