@@ -19,7 +19,7 @@ body {
 </style>
 
 
-<script type="text/javascript">
+ <script type="text/javascript">
 	/* 	formatter:rep  :可以对单列数据做判断   例如：sex:0,1(0男1女) 可以用formatter
 	
 	function rep(value,row,index){
@@ -43,7 +43,7 @@ body {
 
 		var fname = $("#tb").textbox("getValue");
 
-		$("#dg").datagrid("load", {
+		$("#dg").datagrid("reload", {
 			foodName : fname
 		});
 	};
@@ -204,7 +204,7 @@ body {
 	
 	})
 
-</script>
+</script> 
 </head>
 
 <body>
